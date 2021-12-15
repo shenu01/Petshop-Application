@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddminDashBoardContext" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="602.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="58.0" prefWidth="830.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="Admin Dasboard" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="95.0" prefHeight="216.0" prefWidth="830.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="398.0" layoutY="271.0" text="Number Of Orders" textFill="#808080">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="687.0" layoutY="271.0" text="Total Income" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="323.0" prefHeight="209.0" prefWidth="830.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="52.0" layoutX="789.0" layoutY="17.0" onMouseClicked="#LoginWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/35logOut.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="53.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#EditRemovePet" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="65.0" prefWidth="222.0" style="-fx-background-color: #05c46b; -fx-background-radius: 12;" text="Add/Remove/Update All Pets" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="591.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#EditRemovePetProduct" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="65.0" prefWidth="239.0" style="-fx-background-color: #f6b93b; -fx-background-radius: 12;" text="Add/Remove/Update All Pet Products">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="323.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#EditRemovePetFood" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="65.0" prefWidth="222.0" style="-fx-background-color: #e55039; -fx-background-radius: 12;" text="Add/Remove/Update All Pet Foods">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="208.0" layoutY="434.0" mnemonicParsing="false" onMouseClicked="#UserManage" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="65.0" prefWidth="185.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;" text="Manage User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="481.0" layoutY="434.0" mnemonicParsing="false" onMouseClicked="#IncomeReport" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="65.0" prefWidth="185.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;" text="View Income Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="521.0" layoutY="345.0" onMouseClicked="#EditPetFood" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/sdadsad.jpg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="251.0" layoutY="345.0" onMouseClicked="#EditPet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/adddl.jpg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="807.0" layoutY="345.0" onMouseClicked="#EditPetProduct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ergreg.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <DatePicker fx:id="txtForm" layoutX="60.0" layoutY="178.0" promptText="From">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </DatePicker>
+      <DatePicker fx:id="txtTo" layoutX="60.0" layoutY="232.0" promptText="To">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </DatePicker>
+      <Label fx:id="lblNoOfOrders" alignment="CENTER" layoutX="353.0" layoutY="147.0" prefHeight="112.0" prefWidth="195.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;" text=" ">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="lblTotalIncome" alignment="CENTER" layoutX="626.0" layoutY="147.0" prefHeight="112.0" prefWidth="195.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="Date" layoutX="112.0" layoutY="104.0" prefHeight="25.0" prefWidth="119.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="104.0" prefHeight="25.0" prefWidth="52.0" text="To Day :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="694.0" layoutY="104.0" prefHeight="25.0" prefWidth="68.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Time" alignment="CENTER_RIGHT" layoutX="698.0" layoutY="104.0" prefHeight="25.0" prefWidth="119.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

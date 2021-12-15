@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PlaceOrderFormContext" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddOrderController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="602.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="310.0" prefHeight="263.0" prefWidth="830.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="95.0" prefHeight="205.0" prefWidth="830.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="14.0" prefHeight="64.0" prefWidth="692.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="Place Order Form" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="52.0" layoutX="723.0" layoutY="20.0" onMouseClicked="#BackDashBorad" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/35logOut.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="100.0" text="Order ID:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderLabel" layoutX="97.0" layoutY="100.0" prefHeight="17.0" prefWidth="66.0" text="0001">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="Time" alignment="TOP_RIGHT" layoutX="741.0" layoutY="96.0" prefHeight="33.0" prefWidth="110.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCustomerID" layoutX="55.0" layoutY="131.0" prefWidth="150.0" promptText="Customer ID" />
+      <ComboBox fx:id="cmbCateID" layoutX="55.0" layoutY="234.0" prefWidth="150.0" promptText="Category ID" />
+      <ComboBox fx:id="cmbItemID" layoutX="55.0" layoutY="185.0" prefWidth="150.0" promptText="Item ID" />
+      <TextField fx:id="txtCName" layoutX="213.0" layoutY="131.0" promptText="Customer Name" />
+      <TextField fx:id="txtCAddress" layoutX="371.0" layoutY="131.0" prefHeight="3.0" prefWidth="149.0" promptText="Customer Addres" />
+      <TextField fx:id="txtCTel" layoutX="529.0" layoutY="131.0" promptText="Customer Tel" />
+      <TextField fx:id="txtItemName" layoutX="212.0" layoutY="185.0" promptText="Item Name" />
+      <TextField fx:id="txtItemDesc" layoutX="368.0" layoutY="185.0" prefHeight="25.0" prefWidth="279.0" promptText="Discription" />
+      <Separator layoutX="783.0" layoutY="157.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="1.0" />
+      <TextField fx:id="txtICategoryName" layoutX="213.0" layoutY="234.0" prefHeight="25.0" prefWidth="149.0" promptText="Category Name" />
+      <TextField fx:id="txtItemPrice" layoutX="664.0" layoutY="185.0" prefHeight="25.0" prefWidth="110.0" promptText="Uniit Price" />
+      <TableView fx:id="tblCart" layoutX="63.0" layoutY="323.0" prefHeight="200.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="ColItemID" prefWidth="75.0" text="Item ID" />
+          <TableColumn fx:id="CoICustomerName" prefWidth="158.0" text="Customer Name" />
+            <TableColumn fx:id="colDescription" prefWidth="265.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="115.0" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="161.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button layoutX="609.0" layoutY="268.0" mnemonicParsing="false" onAction="#ClearOrder" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #74CAC9;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="724.0" layoutY="268.0" mnemonicParsing="false" onAction="#AddtoCart" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #74CAC9;" text="Add To List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="733.0" layoutY="530.0" mnemonicParsing="false" onAction="#saveOrder" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #74CAC9;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="55.0" layoutY="534.0" text="Total :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="92.0" layoutY="534.0" prefHeight="17.0" prefWidth="110.0" text=" ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="49.0" layoutX="809.0" layoutY="163.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/rewref.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="48.0" layoutY="264.0" onMouseClicked="#AddCustomer" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/erw.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtCustNic" layoutX="686.0" layoutY="131.0" prefHeight="3.0" prefWidth="149.0" promptText="Customer Nic" />
+      <Label fx:id="Date" alignment="CENTER" layoutX="368.0" layoutY="97.0" prefHeight="33.0" prefWidth="164.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="627.0" layoutY="530.0" mnemonicParsing="false" onAction="#JasperReport" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #74CAC9;" text="Bill" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="97.0" layoutY="268.0" mnemonicParsing="false" onAction="#Customer_Report" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #74CAC9;" text="Show Customer Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

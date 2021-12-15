@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddUserContext" prefHeight="378.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddUserController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="14.0" prefHeight="47.0" prefWidth="322.0" text="Add/Remove User">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="39.0" layoutY="57.0" prefHeight="9.0" prefWidth="678.0" />
+      <Separator layoutX="364.0" layoutY="73.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="29.0" />
+      <Label layoutX="54.0" layoutY="73.0" prefHeight="24.0" prefWidth="141.0" text="Add  New User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="73.0" prefHeight="24.0" prefWidth="141.0" text="Remove User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserID" layoutX="50.0" layoutY="138.0" prefHeight="25.0" prefWidth="245.0" promptText="User ID Ex : U001" />
+      <TextField fx:id="txtUserName" layoutX="50.0" layoutY="178.0" prefHeight="25.0" prefWidth="245.0" promptText="User Name" />
+      <TextField fx:id="txtUserPass" layoutX="50.0" layoutY="219.0" prefHeight="25.0" prefWidth="245.0" promptText="Add Password" />
+      <TextField fx:id="txtUserName01" layoutX="426.0" layoutY="219.0" prefHeight="25.0" prefWidth="245.0" promptText="User Name" />
+      <Button layoutX="80.0" layoutY="285.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="32.0" prefWidth="185.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;" text="Add User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="285.0" mnemonicParsing="false" onAction="#RemoveUser" prefHeight="32.0" prefWidth="185.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12;" text="Remove User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUserID01" layoutX="426.0" layoutY="177.0" onAction="#selectUser" prefHeight="25.0" prefWidth="245.0" promptText="User ID" />
+      <ComboBox fx:id="cmbUser" layoutX="426.0" layoutY="137.0" prefHeight="25.0" prefWidth="245.0" promptText="Existing User" />
+      <Button layoutX="50.0" layoutY="100.0" mnemonicParsing="false" onAction="#User_Report" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #74CAC9;" text="Show User Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

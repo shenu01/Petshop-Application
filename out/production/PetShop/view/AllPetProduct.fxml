@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AllPetProductsContext" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PetProductController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="36.0" prefHeight="64.0" prefWidth="692.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="All Pet Products" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="57.0" layoutY="166.0" prefHeight="1.0" prefWidth="806.0" />
+      <TableView fx:id="ProductTabel" layoutX="46.0" layoutY="196.0" prefHeight="380.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="ColPID" prefWidth="87.0" text="Pet Product ID" />
+          <TableColumn fx:id="colPPrice" prefWidth="120.0" text="Product Category ID" />
+            <TableColumn fx:id="colPName" prefWidth="150.0" text="Pet Product Name" />
+            <TableColumn fx:id="colPDesc" prefWidth="227.0" text="Pet Product Description" />
+            <TableColumn fx:id="colPSize" minWidth="0.0" prefWidth="99.0" text="Product Size" />
+            <TableColumn fx:id="colPcateID" prefWidth="116.0" text="Product Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="742.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#DashBorad" prefHeight="25.0" prefWidth="121.0" style="-fx-background-radius: 12;" text="DashBoard" textFill="#387c7b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

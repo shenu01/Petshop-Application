@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AllPetContext" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllpetController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="AllPets" layoutX="47.0" layoutY="195.0" prefHeight="380.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="colPId" prefWidth="61.0" text="Pet ID" />
+          <TableColumn fx:id="PetCategory" prefWidth="97.0" text="Pet Category ID" />
+            <TableColumn fx:id="colPsize" prefWidth="94.0" text="Pet Size" />
+            <TableColumn fx:id="colPname" prefWidth="178.0" text="Pet Name" />
+            <TableColumn fx:id="colPdesc" prefWidth="214.0" text="Pet Description" />
+            <TableColumn fx:id="colPpri" minWidth="0.0" prefWidth="161.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="26.0" prefHeight="64.0" prefWidth="692.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="All Pets" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="47.0" layoutY="156.0" prefHeight="1.0" prefWidth="806.0" />
+      <Button layoutX="756.0" layoutY="114.0" mnemonicParsing="false" onKeyPressed="#BackLogin" onMouseClicked="#BackLogin" prefHeight="25.0" prefWidth="121.0" style="-fx-background-radius: 12;" text="DashBoard" textFill="#387c7b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

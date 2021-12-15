@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllpetController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <TableView layoutX="47.0" layoutY="195.0" prefHeight="380.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="61.0" text="Pet ID" />
+          <TableColumn prefWidth="62.0" text="Pet Verite" />
+            <TableColumn prefWidth="118.0" text="Pet Size" />
+            <TableColumn prefWidth="189.0" text="Pet Name" />
+            <TableColumn prefWidth="214.0" text="Pet Description" />
+            <TableColumn minWidth="0.0" prefWidth="161.0" text="Price" />
+        </columns>
+      </TableView>
+      <ComboBox layoutX="165.0" layoutY="114.0" prefHeight="25.0" prefWidth="305.0" />
+      <Label layoutX="50.0" layoutY="116.0" prefHeight="17.0" prefWidth="137.0" text="Pet Category ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="26.0" prefHeight="64.0" prefWidth="692.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="All Pets" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="47.0" layoutY="156.0" prefHeight="1.0" prefWidth="806.0" />
+      <ImageView fitHeight="55.0" fitWidth="52.0" layoutX="752.0" layoutY="32.0" onMouseClicked="#BackDashBorad" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/35logOut.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

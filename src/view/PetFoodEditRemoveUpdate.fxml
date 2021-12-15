@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddFoodContext" prefHeight="520.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PetFoodEditRemoveUpdateController">
+   <children>
+      <Separator layoutX="271.0" layoutY="26.0" orientation="VERTICAL" prefHeight="488.0" prefWidth="14.0" />
+      <Separator layoutX="531.0" layoutY="26.0" orientation="VERTICAL" prefHeight="488.0" prefWidth="14.0" />
+      <AnchorPane layoutX="540.0" layoutY="1.0" prefHeight="520.0" prefWidth="265.0">
+         <children>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="11.0" prefHeight="39.0" prefWidth="156.0" text="Remove Pet Food ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="48.0" layoutY="49.0" prefWidth="200.0" />
+            <ComboBox fx:id="cmbPDCatego" editable="true" layoutX="40.0" layoutY="90.0" prefWidth="150.0" promptText="Pet Food Category " style="-fx-background-color: #74CAC9;" />
+            <TextField fx:id="txtPfid3" layoutX="40.0" layoutY="160.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food ID Ex : A001" />
+            <Button layoutX="55.0" layoutY="421.0" mnemonicParsing="false" onAction="#RemoveFood" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #74CAC9;" text="Pet Food  Remove">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="279.0" layoutY="1.0" prefHeight="520.0" prefWidth="255.0">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="12.0" prefHeight="39.0" prefWidth="156.0" text="Update Pet Food ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="35.0" layoutY="51.0" prefWidth="200.0" />
+            <ComboBox fx:id="cmbPDCateg" editable="true" layoutX="36.0" layoutY="91.0" prefWidth="150.0" promptText="Pet Food Category " style="-fx-background-color: #74CAC9;" />
+            <TextField fx:id="txtPfid2" layoutX="35.0" layoutY="161.0" onAction="#SelectPetFood" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food ID Ex : A001" />
+            <TextField fx:id="txtPfN2" layoutX="36.0" layoutY="197.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Name" />
+            <TextField fx:id="txtPfp2" layoutX="35.0" layoutY="233.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Price" />
+            <TextField fx:id="txtPFD2" layoutX="35.0" layoutY="268.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Description" />
+            <TextField fx:id="txtPFPS2" layoutX="36.0" layoutY="304.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Product Size" />
+            <TextField fx:id="txtPFCI2" layoutX="35.0" layoutY="338.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Category ID F001" />
+            <Button layoutX="57.0" layoutY="420.0" mnemonicParsing="false" onAction="#UpdateFood" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #74CAC9;" text="Update">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="2.0" layoutY="1.0" prefHeight="520.0" prefWidth="265.0">
+         <children>
+            <Label alignment="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="39.0" prefWidth="156.0" text="Add New Food">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="33.0" layoutY="52.0" prefWidth="200.0" />
+            <ComboBox fx:id="cmbPDCate" editable="true" layoutX="40.0" layoutY="92.0" prefWidth="150.0" promptText="Pet Food Category " style="-fx-background-color: #74CAC9;" />
+            <TextField fx:id="txtPfid" layoutX="40.0" layoutY="162.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food ID Ex : A001" />
+            <TextField fx:id="txtPFCI" layoutX="40.0" layoutY="339.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Category ID F001" />
+            <TextField fx:id="txtPfN" layoutX="40.0" layoutY="197.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Name" />
+            <TextField fx:id="txtPFD" layoutX="40.0" layoutY="268.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Description" />
+            <TextField fx:id="txtPFPS" layoutX="40.0" layoutY="304.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Product Size" />
+            <TextField fx:id="txtPfp" layoutX="40.0" layoutY="232.0" prefHeight="25.0" prefWidth="186.0" promptText="Pet Food Price" />
+            <Button fx:id="AddNewPet" layoutX="55.0" layoutY="423.0" mnemonicParsing="false" onAction="#AddNewFood" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #74CAC9;" text="Add New Food">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

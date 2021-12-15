@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashboardContext" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/ppp.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="106.0" layoutY="28.0" prefHeight="64.0" prefWidth="692.0" style="-fx-background-color: white; -fx-background-radius: 18px;" text="Dashboard" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="117.0" prefHeight="0.0" prefWidth="866.0" style="-fx-background-color: black;" />
+      <Separator layoutY="568.0" prefHeight="13.0" prefWidth="900.0" />
+      <Label layoutX="33.0" layoutY="581.0" prefHeight="15.0" prefWidth="656.0" text="Help  :  gmail - RaviduLkshitha360@gmail.com         hotline - 075-2230075" textFill="#393333">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="25.0" layoutY="130.0" prefHeight="395.0" prefWidth="850.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="56.0" onMouseClicked="#AllPets" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="125.0" prefWidth="250.0" style="-fx-background-color: #05c46b; -fx-background-radius: 12px;" text="All Pets  " textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="295.0" layoutY="56.0" onMouseClicked="#AllPetFood" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="125.0" prefWidth="250.0" style="-fx-background-color: #e55039; -fx-background-radius: 12px;" text="All Pet Food" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="572.0" layoutY="56.0" onMouseClicked="#AllPetProduct" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="125.0" prefWidth="250.0" style="-fx-background-color: #f6b93b; -fx-background-radius: 12px;" text="All Pet Product" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="523.0" layoutY="56.0" onMouseClicked="#EditPetFood" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/sdadsad.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="800.0" layoutY="56.0" onMouseClicked="#EditPetProduct" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/ergreg.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="39.0" layoutX="246.0" layoutY="56.0" onMouseClicked="#EditPet" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/adddl.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="36.0" layoutX="817.0" layoutY="362.0" onMouseClicked="#BackLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/35logOut.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="Time" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="676.0" layoutY="2.0" prefHeight="28.0" prefWidth="101.0" text="time" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="781.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/17183047.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="809.0" layoutY="-1.0" text="17 f" textFill="#7d7f83">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="439.0" layoutY="229.0" onMouseClicked="#ManageOrder" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="125.0" prefWidth="250.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12px;" text="Manage Order" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="160.0" layoutY="229.0" onMouseClicked="#AddOrder" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="125.0" prefWidth="250.0" style="-fx-background-color: #74CAC9; -fx-background-radius: 12px;" text="Add Order" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="date" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="19.0" layoutY="2.0" prefHeight="28.0" prefWidth="101.0" text="768" textFill="#212122">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="4.0" prefHeight="23.0" prefWidth="128.0" text="Pet Shop Store">
+               <font>
+                  <Font name="Calibri Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
